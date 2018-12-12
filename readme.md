@@ -1,6 +1,8 @@
 # What is this?
 Use Python to download YoutubeLiveVideo, FOREEVER!!!!!
 
+I used this to construct a long duration video dataset for my research.
+
 # How?
 We also use apscheduler, so it will download the video every hour.
 
