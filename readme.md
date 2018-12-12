@@ -1,11 +1,15 @@
-Use this to download YoutubeLiveVideo.
+# What is this?
+Use Python to download YoutubeLiveVideo, FOREEVER!!!!!
 
+# How?
 We also use apscheduler, so it will download the video every hour.
 
 Python3.5 required.
 
+# What should I do?
 change the url in the downloader.py to the video you want.
 
+# Requirements? Usage?
 you need apscheduler and streamlink:
 
 ```
