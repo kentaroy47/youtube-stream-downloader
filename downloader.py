@@ -6,6 +6,8 @@ import subprocess
 
 # target URL
 URL = 'https://www.youtube.com/watch?v=K-F4CeVsWHA'
+quality = 'best' # can choose from 720p, 480p, 240p 
+outputfile = str(now.year)+'-'+str(now.month)+'-'+str(now.day)+'-'+str(now.hour)+str(now.minute)+'.ts'
 
 # Start the scheduler
 sched = Scheduler()
@@ -16,8 +18,8 @@ sched.start()
 def job_function():
     now = datetime.datetime.now()
     ### CHANGE THE URL HERE ####
-    command='streamlink ' + URL + ' 720p --hls-start-offset 01:00:00 --hls-duration 01:00:00 -o "'+str(now.year)+'-'+str(now.month)+'-'+str(now.day)+'-'+str(now.hour)+str(now.minute)+'-jackson.ts"'
-    subprocess.call(command,shell=True)
+    command='streamlink ' + URL + ' '+ quality + ' --hls-start-offset 01:00:00 --hls-duration 01:00:00 -o ' + outputfile
+    subprocess.call(command, shell=True)
     time.sleep(20)
 
 # Schedules job_function to be run once each hour
