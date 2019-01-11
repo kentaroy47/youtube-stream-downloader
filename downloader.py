@@ -4,10 +4,10 @@ import time
 from apscheduler.scheduler import Scheduler
 import subprocess
 
-# target URL
+### CHANGE THE URL HERE ####
 URL = 'https://www.youtube.com/watch?v=K-F4CeVsWHA'
 quality = 'best' # can choose from 720p, 480p, 240p 
-outputfile = str(now.year)+'-'+str(now.month)+'-'+str(now.day)+'-'+str(now.hour)+str(now.minute)+'.ts'
+
 
 # Start the scheduler
 sched = Scheduler()
@@ -17,7 +17,8 @@ sched.start()
 # define Job
 def job_function():
     now = datetime.datetime.now()
-    ### CHANGE THE URL HERE ####
+    outputfile = str(now.year)+'-'+str(now.month)+'-'+str(now.day)+'-'+str(now.hour)+str(now.minute)+'.ts'
+    
     command='streamlink ' + URL + ' '+ quality + ' --hls-start-offset 01:00:00 --hls-duration 01:00:00 -o ' + outputfile
     subprocess.call(command, shell=True)
     time.sleep(20)
