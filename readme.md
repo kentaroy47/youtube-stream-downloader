@@ -1,3 +1,7 @@
+right now, the streamlink on youtube live support might be broken.
+https://t.co/Qk93u6sCyr
+
+
 # What is this?
 Use Python to download YoutubeLiveVideo, FOREEVER!!!!!
 
