@@ -10,7 +10,7 @@ I used this to construct a long duration video dataset for my research.
 # How?
 We also use apscheduler, so it will download the video every hour.
 
-Python3.5 required.
+Python 3.5 or 3.6 required.
 
 # What should I do?
 change the url in the downloader.py to the video you want.
@@ -20,8 +20,8 @@ you need apscheduler and streamlink:
 
 ```
 git clone https://github.com/kentaroy47/youtube-stream-downloader.git
-pip install apscheduler
-sudo apt install streamlink
+pip install apscheduler==2.1.2 # you need this version.
+pip install streamlink
 ```
 
 Then, run:
