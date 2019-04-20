@@ -5,7 +5,7 @@ This is fixed. just pip install streamlink, thanks for the developments^^ (19/3/
 
 
 # What is this?
-Use Python to download YoutubeLiveVideo, FOREEVER!!!!!
+Use Python to download YoutubeLiveVideos.
 
 I used this to construct a long duration video dataset for my research.
 
