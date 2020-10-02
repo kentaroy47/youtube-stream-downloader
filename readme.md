@@ -25,7 +25,13 @@ pip install apscheduler==2.1.2 # you need this version.
 pip install streamlink
 ```
 
-Then, run:
+## Set video URL in download.py
+```download.py
+### CHANGE THE URL HERE ####
+URL = 'https://www.youtube.com/watch?v=1EiC9bvVGnk'
+```
+
+## Then, run:
 
 ```
 python downloader.py
