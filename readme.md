@@ -11,7 +11,7 @@ I used this to construct a long duration video dataset for my research.
 # How?
 We also use apscheduler, so it will download the video every hour.
 
-Python 3.5 or 3.6 required.
+Python >= 3.5 required.
 
 # What should I do?
 change the url in the downloader.py to the video you want.
