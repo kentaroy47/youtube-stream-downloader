@@ -1,5 +1,4 @@
-~~right now, the streamlink on youtube live support might be broken.
-https://t.co/Qk93u6sCyr ~~
+~~right now, the streamlink on youtube live support might be broken. https://t.co/Qk93u6sCyr~~
 
 This is fixed. just pip install streamlink, thanks for the developments^^ (19/3/12)
 
