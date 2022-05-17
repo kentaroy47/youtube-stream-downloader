@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import datetime
 import time
-from apscheduler.scheduler import Scheduler
+from apscheduler.schedulers.blocking import BlockingScheduler
 import subprocess
 
 ### CHANGE THE URL HERE ####
@@ -10,9 +10,7 @@ quality = 'best' # can choose from 720p, 480p, 240p
 
 
 # Start the scheduler
-sched = Scheduler()
-sched.daemonic = False
-sched.start()
+sched = BlockingScheduler()
 
 # define Job
 def job_function():
@@ -23,5 +21,6 @@ def job_function():
     subprocess.call(command, shell=True)
     time.sleep(20)
 
-# Schedules job_function to be run once each hour
-sched.add_cron_job(job_function, hour='0-23')
+# Schedule job_function to be called every hour
+sched.add_job(job_function, 'interval', hours=1)
+sched.start()

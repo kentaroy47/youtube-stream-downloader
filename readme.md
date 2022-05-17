@@ -21,7 +21,7 @@ you need apscheduler and streamlink:
 
 ```
 git clone https://github.com/kentaroy47/youtube-stream-downloader.git
-pip install apscheduler==2.1.2 # you need this version.
+pip install apscheduler
 pip install streamlink
 ```
 
