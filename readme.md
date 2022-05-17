@@ -22,7 +22,7 @@ you need apscheduler and streamlink:
 ```
 git clone https://github.com/kentaroy47/youtube-stream-downloader.git
 pip install apscheduler
-pip install streamlink
+pip install streamlink==3.2.0
 ```
 
 ## Set video URL in download.py
