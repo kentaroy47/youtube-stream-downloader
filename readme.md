@@ -1,22 +1,16 @@
-~~right now, the streamlink on youtube live support might be broken. https://t.co/Qk93u6sCyr~~
-
-This is fixed. just pip install streamlink, thanks for the developments^^ (19/3/12)
-
-
 # What is this?
 Use Python to download YoutubeLiveVideos.
 
 I used this to construct a long duration video dataset for my research.
 
 # How?
-We also use apscheduler, so it will download the video every hour.
+`simple_download.py`: Just download a youtube video.
+
+`download.py`: We use `Apscheduler` to download the video every hour.
 
 Python >= 3.5 required.
 
-# What should I do?
-change the url in the downloader.py to the video you want.
-
-# Requirements? Usage?
+# Requirements
 you need apscheduler and streamlink:
 
 ```
@@ -25,13 +19,15 @@ pip install apscheduler
 pip install streamlink==3.2.0
 ```
 
-## Set video URL in download.py
+# Usage 
+
+Set video URL in `download.py`
 ```download.py
 ### CHANGE THE URL HERE ####
 URL = 'https://www.youtube.com/watch?v=1EiC9bvVGnk'
 ```
 
-## Then, run:
+Then, run:
 
 ```
 python downloader.py
